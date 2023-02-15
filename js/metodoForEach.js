@@ -1,8 +1,9 @@
 const elementoInserirLivros = document.querySelector('#livros')
 
 function exibirLivros(listaDeLivros) {
+  elementoInserirLivros.innerHTML = ''
     listaDeLivros.forEach(livro => {
-        elementoInserirLivros.innerHTML += `    <div class="livro">
+        elementoInserirLivros.innerHTML += `<div class="livro">
         <img class="livro__imagens" src="${livro.imagem}" alt="${livro.alt}" />
         <h2 class="livro__titulo">
         ${livro.titulo}
